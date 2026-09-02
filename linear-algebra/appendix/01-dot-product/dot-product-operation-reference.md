@@ -636,7 +636,7 @@ Try to answer without calculation before checking.
 
 ---
 
-## Dot Product Explainer
+## Dot Product Operation Reference
 
 ![Original generated dot-product discussion image](resources/dot-product-operation-reference.png)
 
