@@ -146,7 +146,6 @@ Independence means no vector is redundant: none can be built from the others.
 | **Incomplete mental model** | “The origin matters to the vector.” | The vector is tail-to-head displacement; moving the whole arrow does not change it. |
 | **Recall / notation failure** | `v·v` is the length. | `v·v=‖v‖²`; the length is `‖v‖=√(v·v)`. |
 | **Recall / notation failure** | “Matrix multiplication always yields a matrix or vector.” | Check dimensions: `(m×n)(n×p)=(m×p)`; a `1×1` result is scalar. |
-| **Ambiguous wording** | “What can `a` and `b` create?” with `u,v` unstated. | Write the full prompt: given `u,v`, what is the span of `au+bv`, with `a,b∈ℝ` scalars? This was not a conceptual mistake. |
 | **Correct understanding** | “Scale each vector by `x₁,x₂,…`, then add/subtract directional units.” | Correct. Refine the wording: add the scaled vectors component-by-component to get the resultant. |
 | **Correct understanding** | “Magnitude should not matter when vectors are perfectly correlated/aligned.” | Correct for *pure directional alignment*. Raw dot product also retains magnitude; cosine similarity normalizes it away. |
 | **Correct understanding** | “Orthogonal vectors stay at dot product zero even if magnitude changes.” | Correct, because the cosine factor is zero. |
