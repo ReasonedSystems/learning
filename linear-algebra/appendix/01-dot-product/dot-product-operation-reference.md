@@ -1,4 +1,4 @@
-# Appendix — The Dot Product Operation Bible
+# Appendix — The Dot Product Operation Reference
 
 > A durable reference for the ideas developed in the Day 2 discussion. The goal is not to remember a recipe; it is to be able to reconstruct the meaning, the formula, and the appropriate operation from first principles.
 
