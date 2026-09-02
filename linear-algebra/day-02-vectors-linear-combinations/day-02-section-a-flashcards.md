@@ -66,9 +66,6 @@
 - **Trigger:** “The origin determines the vector.”  
   **Redirect:** The *tail’s position* is irrelevant; the tail-to-head displacement defines the vector. Drawing at the origin is a convention.
 
-- **Trigger:** “`a` and `b` are vectors / the question forgot the vectors.”  
-  **Redirect:** State the whole expression: given `u,v`, `au+bv` where `a,b ∈ ℝ` are scalar coefficients.
-
 - **Trigger:** “Column picture means guess coefficients.”  
   **Redirect:** Coefficients are unknowns to solve for systematically; the picture asks whether `b` is in the columns’ span.
 
