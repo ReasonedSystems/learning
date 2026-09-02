@@ -638,9 +638,9 @@ Try to answer without calculation before checking.
 
 ## Dot Product Explainer
 
-![Original generated dot-product discussion image](resources/dot-product-explainer.png)
+![Original generated dot-product discussion image](resources/dot-product-operation-reference.png)
 
-[Open the original PNG resource](resources/dot-product-explainer.png)
+[Open the original PNG resource](resources/dot-product-operation-reference.png)
 
 ---
 
