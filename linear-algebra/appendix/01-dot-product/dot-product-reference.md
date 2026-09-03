@@ -184,11 +184,11 @@ where:
 
 The parallel part is the vector projection of $b$ onto the direction of $a$:
 
-$$b_{\parallel} = \operatorname{proj}_a(b)$$
+$$b_{\parallel} = \mathrm{proj}_a(b)$$
 
 and:
 
-$$b_{\perp} = b-\operatorname{proj}_a(b)$$
+$$b_{\perp} = b-\mathrm{proj}_a(b)$$
 
 This decomposition becomes extremely useful for understanding the dot product:
 
@@ -309,7 +309,7 @@ Choose $a$ as the reference direction.
 
 Let:
 
-$$\operatorname{comp}_a(b)$$
+$$\mathrm{comp}_a(b)$$
 
 mean:
 
@@ -317,7 +317,7 @@ mean:
 
 Then:
 
-$$\boxed{ a\cdot b = \|a\| \operatorname{comp}_a(b) }$$
+$$\boxed{ a\cdot b = \|a\| \mathrm{comp}_a(b) }$$
 
 This gives another mental model:
 
@@ -347,11 +347,11 @@ $$\boxed{ a\cdot b=b\cdot a }$$
 
 So both of these interpretations are valid:
 
-$$a\cdot b = \|a\| \operatorname{comp}_a(b)$$
+$$a\cdot b = \|a\| \mathrm{comp}_a(b)$$
 
 and:
 
-$$a\cdot b = \|b\| \operatorname{comp}_b(a)$$
+$$a\cdot b = \|b\| \mathrm{comp}_b(a)$$
 
 The two scalar components are generally different.
 
@@ -456,7 +456,7 @@ This is the easiest and most direct way to **compute** a dot product, especially
 
 Remember that these are the vector's coordinate components.
 
-They are different from the scalar directional component $\operatorname{comp}_a(b)$ introduced later.
+They are different from the scalar directional component $\mathrm{comp}_a(b)$ introduced later.
 
 ---
 
@@ -549,7 +549,7 @@ This view begins from geometry rather than from the dot-product formula.
 
 The signed scalar amount of $b$ lying along the direction of $a$ is:
 
-$$\boxed{ \operatorname{comp}_a(b) = \|b\|\cos\theta }$$
+$$\boxed{ \mathrm{comp}_a(b) = \|b\|\cos\theta }$$
 
 This is a **scalar**.
 
@@ -569,15 +569,15 @@ $$a\cdot b = \|a\|\|b\|\cos\theta$$
 
 Since:
 
-$$\operatorname{comp}_a(b) = \|b\|\cos\theta$$
+$$\mathrm{comp}_a(b) = \|b\|\cos\theta$$
 
 we obtain:
 
-$$\boxed{ a\cdot b = \|a\| \operatorname{comp}_a(b) }$$
+$$\boxed{ a\cdot b = \|a\| \mathrm{comp}_a(b) }$$
 
 Therefore:
 
-$$\boxed{ \operatorname{comp}_a(b) = \frac{a\cdot b}{\|a\|} }$$
+$$\boxed{ \mathrm{comp}_a(b) = \frac{a\cdot b}{\|a\|} }$$
 
 This is the scalar-component interpretation of the dot product.
 
@@ -605,7 +605,7 @@ It tells us:
 
 Now multiply the scalar component by this unit direction:
 
-$$\boxed{ \operatorname{proj}_a(b) = \operatorname{comp}_a(b)\hat a }$$
+$$\boxed{ \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a }$$
 
 So:
 
@@ -613,11 +613,11 @@ So:
 
 Substitute the component formula:
 
-$$\operatorname{proj}_a(b) = \frac{a\cdot b}{\|a\|} \frac{a}{\|a\|}$$
+$$\mathrm{proj}_a(b) = \frac{a\cdot b}{\|a\|} \frac{a}{\|a\|}$$
 
 Therefore:
 
-$$\boxed{ \operatorname{proj}_a(b) = \frac{a\cdot b}{\|a\|^2}a }$$
+$$\boxed{ \mathrm{proj}_a(b) = \frac{a\cdot b}{\|a\|^2}a }$$
 
 Since:
 
@@ -625,7 +625,7 @@ $$\|a\|^2=a\cdot a$$
 
 we can also write:
 
-$$\boxed{ \operatorname{proj}_a(b) = \frac{a\cdot b}{a\cdot a}a }$$
+$$\boxed{ \mathrm{proj}_a(b) = \frac{a\cdot b}{a\cdot a}a }$$
 
 Projection is not required to calculate the dot product.
 
@@ -635,7 +635,7 @@ Its purpose is different:
 
 Then:
 
-$$\boxed{ b = \operatorname{proj}_a(b) + b_{\perp} }$$
+$$\boxed{ b = \mathrm{proj}_a(b) + b_{\perp} }$$
 
 ---
 
@@ -645,19 +645,19 @@ The scalar component sits at the center of the geometry.
 
 From:
 
-$$\operatorname{comp}_a(b)$$
+$$\mathrm{comp}_a(b)$$
 
 we can branch in two different directions.
 
 Multiply by the magnitude of $a$:
 
-$$\boxed{ \operatorname{comp}_a(b)\|a\| = a\cdot b }$$
+$$\boxed{ \mathrm{comp}_a(b)\|a\| = a\cdot b }$$
 
 to obtain the dot product.
 
 Or multiply by the unit direction of $a$:
 
-$$\boxed{ \operatorname{comp}_a(b)\hat a = \operatorname{proj}_a(b) }$$
+$$\boxed{ \mathrm{comp}_a(b)\hat a = \mathrm{proj}_a(b) }$$
 
 to obtain the projection vector.
 
@@ -667,10 +667,10 @@ So the conceptual structure is:
 
 | Object | Type | Formula | Mental model |
 |---|---|---|---|
-| Scalar component | Scalar | $\operatorname{comp}_a(b)=\|b\|\cos\theta$ | **HOW MUCH** |
+| Scalar component | Scalar | $\mathrm{comp}_a(b)=\|b\|\cos\theta$ | **HOW MUCH** |
 | Unit vector | Vector | $\hat a=a/\|a\|$ | **WHICH DIRECTION** |
-| Projection | Vector | $\operatorname{proj}_a(b)=\operatorname{comp}_a(b)\hat a$ | **HOW MUCH × WHICH DIRECTION** |
-| Dot product | Scalar | $a\cdot b=\|a\|\operatorname{comp}_a(b)$ | reference magnitude × **HOW MUCH** |
+| Projection | Vector | $\mathrm{proj}_a(b)=\mathrm{comp}_a(b)\hat a$ | **HOW MUCH × WHICH DIRECTION** |
+| Dot product | Scalar | $a\cdot b=\|a\|\mathrm{comp}_a(b)$ | reference magnitude × **HOW MUCH** |
 
 ---
 
@@ -678,13 +678,13 @@ So the conceptual structure is:
 
 The three actual dot-product views are:
 
-$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\operatorname{comp}_a(b) }$$
+$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) }$$
 
 | View | Formula | Best mental use |
 |---|---|---|
 | Vector components | $\sum_i a_ib_i$ | easiest way to **COMPUTE** |
 | Geometry / alignment | $\|a\|\|b\|\cos\theta$ | explains magnitude + alignment |
-| Scalar component | $\|a\|\operatorname{comp}_a(b)$ | shows **WHAT CONTRIBUTES** |
+| Scalar component | $\|a\|\mathrm{comp}_a(b)$ | shows **WHAT CONTRIBUTES** |
 
 The most durable switching rule is:
 
@@ -798,19 +798,19 @@ $$\boxed{ 18 = \text{magnitude of }a \times \text{magnitude of }b \times \text{a
 
 The signed scalar amount of $b$ along the direction of $a$ is:
 
-$$\operatorname{comp}_a(b) = \|b\|\cos\theta$$
+$$\mathrm{comp}_a(b) = \|b\|\cos\theta$$
 
 Therefore:
 
-$$\operatorname{comp}_a(b) = \sqrt{26}\cos33.69^\circ$$
+$$\mathrm{comp}_a(b) = \sqrt{26}\cos33.69^\circ$$
 
 which evaluates to:
 
-$$\boxed{ \operatorname{comp}_a(b) = \sqrt{18} }$$
+$$\boxed{ \mathrm{comp}_a(b) = \sqrt{18} }$$
 
 Now use:
 
-$$a\cdot b = \|a\|\operatorname{comp}_a(b)$$
+$$a\cdot b = \|a\|\mathrm{comp}_a(b)$$
 
 Therefore:
 
@@ -834,15 +834,15 @@ $$\hat a = \frac{a}{\|a\|} = \frac{[3,3]}{\sqrt{18}}$$
 
 Projection is:
 
-$$\operatorname{proj}_a(b) = \operatorname{comp}_a(b)\hat a$$
+$$\mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a$$
 
 Substituting:
 
-$$\operatorname{proj}_a(b) = \sqrt{18} \frac{[3,3]}{\sqrt{18}}$$
+$$\mathrm{proj}_a(b) = \sqrt{18} \frac{[3,3]}{\sqrt{18}}$$
 
 Therefore:
 
-$$\boxed{ \operatorname{proj}_a(b) = [3,3] = a }$$
+$$\boxed{ \mathrm{proj}_a(b) = [3,3] = a }$$
 
 This is a convenient geometric coincidence in this example:
 
@@ -854,7 +854,7 @@ $$\frac{a\cdot b}{a\cdot a} = \frac{18}{18} = 1$$
 
 So:
 
-$$\operatorname{proj}_a(b) = 1a = a$$
+$$\mathrm{proj}_a(b) = 1a = a$$
 
 The coefficient $1$ means:
 
@@ -866,7 +866,7 @@ The coefficient $1$ means:
 
 We now have:
 
-$$b_{\parallel} = \operatorname{proj}_a(b) = [3,3]$$
+$$b_{\parallel} = \mathrm{proj}_a(b) = [3,3]$$
 
 Therefore:
 
@@ -928,13 +928,13 @@ This verifies the key geometric idea:
 
 So:
 
-$$\boxed{ 3(5)+3(1) = \sqrt{18}\sqrt{26}\cos33.69^\circ = \sqrt{18}\operatorname{comp}_a(b) = 18 }$$
+$$\boxed{ 3(5)+3(1) = \sqrt{18}\sqrt{26}\cos33.69^\circ = \sqrt{18}\mathrm{comp}_a(b) = 18 }$$
 
 and:
 
-$$\operatorname{comp}_a(b) = \sqrt{18}$$
+$$\mathrm{comp}_a(b) = \sqrt{18}$$
 
-$$\operatorname{proj}_a(b) = [3,3]$$
+$$\mathrm{proj}_a(b) = [3,3]$$
 
 $$b_{\perp} = [2,-2]$$
 
@@ -984,7 +984,7 @@ $$\frac{a\cdot b} {\|a\|\|b\|} = \cos\theta$$
 
 Therefore:
 
-$$\boxed{ \operatorname{cosine\ similarity}(a,b) = \frac{a\cdot b} {\|a\|\|b\|} }$$
+$$\boxed{ \mathrm{cosine\ similarity}(a,b) = \frac{a\cdot b} {\|a\|\|b\|} }$$
 
 ### Zero-Vector Caveat
 
@@ -1156,15 +1156,15 @@ Because raw dot product retains magnitude.
 
 Now calculate cosine similarity:
 
-$$\operatorname{cos}(a,b) = \frac{15}{(3)(5)} = 1$$
+$$\cos(a,b) = \frac{15}{(3)(5)} = 1$$
 
 and:
 
-$$\operatorname{cos}(a,c) = \frac{30}{(3)(10)} = 1$$
+$$\cos(a,c) = \frac{30}{(3)(10)} = 1$$
 
 Therefore:
 
-$$\boxed{ \operatorname{cos}(a,b) = \operatorname{cos}(a,c) = 1 }$$
+$$\boxed{ \cos(a,b) = \cos(a,c) = 1 }$$
 
 Cosine similarity answers the narrower question:
 
@@ -1347,25 +1347,25 @@ $$\boxed{ 2\times\frac12 = 1 }$$
 
 Recall:
 
-$$a\cdot b = \|a\| \operatorname{comp}_a(b)$$
+$$a\cdot b = \|a\| \mathrm{comp}_a(b)$$
 
 For $b_1$:
 
-$$\operatorname{comp}_a(b_1) = L\cos0^\circ = L$$
+$$\mathrm{comp}_a(b_1) = L\cos0^\circ = L$$
 
 For $b_2$:
 
-$$\operatorname{comp}_a(b_2) = 2L\cos60^\circ$$
+$$\mathrm{comp}_a(b_2) = 2L\cos60^\circ$$
 
 $$= 2L\left(\frac12\right)$$
 
 so:
 
-$$\boxed{ \operatorname{comp}_a(b_2) = L }$$
+$$\boxed{ \mathrm{comp}_a(b_2) = L }$$
 
 Therefore:
 
-$$\boxed{ \operatorname{comp}_a(b_1) = \operatorname{comp}_a(b_2) = L }$$
+$$\boxed{ \mathrm{comp}_a(b_1) = \mathrm{comp}_a(b_2) = L }$$
 
 This reveals the deeper reason the dot products are equal:
 
@@ -1393,11 +1393,11 @@ $$\cos\theta_2 = \cos60^\circ = \boxed{0.5}$$
 
 Therefore:
 
-$$\boxed{ \operatorname{cos}(a,b_1) = 1 }$$
+$$\boxed{ \cos(a,b_1) = 1 }$$
 
 while:
 
-$$\boxed{ \operatorname{cos}(a,b_2) = 0.5 }$$
+$$\boxed{ \cos(a,b_2) = 0.5 }$$
 
 Now the directional difference is visible immediately.
 
@@ -1799,7 +1799,7 @@ Every entry of $C$ is obtained by taking:
 
 So:
 
-$$\boxed{ C_{ij} = \operatorname{row}_i(A) \cdot \operatorname{column}_j(B) }$$
+$$\boxed{ C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) }$$
 
 If $A$ is $m\times n$ and $B$ is $n\times p$, then:
 
@@ -1973,7 +1973,7 @@ $$d=Q-P$$
 
 Then:
 
-$$\boxed{ \operatorname{distance}(P,Q) = \|d\| = \sqrt{d\cdot d} }$$
+$$\boxed{ \mathrm{distance}(P,Q) = \|d\| = \sqrt{d\cdot d} }$$
 
 So dot product participates in distance **through the self-dot of the displacement vector**.
 
@@ -2061,8 +2061,8 @@ Try to answer these **without looking at the formulas first**.
 8. What is the core geometric mental model of the dot product?
 9. What does $\cos\theta$ represent inside the geometric formula?
 10. Why does the perpendicular part of $b$ contribute zero to $a\cdot b$?
-11. What exactly is $\operatorname{comp}_a(b)$?
-12. Is $\operatorname{comp}_a(b)$ a scalar or vector?
+11. What exactly is $\mathrm{comp}_a(b)$?
+12. Is $\mathrm{comp}_a(b)$ a scalar or vector?
 13. What is the difference between scalar component and vector projection?
 14. What does the unit vector $\hat a$ contribute to the projection formula?
 15. Reconstruct projection from **HOW MUCH × WHICH DIRECTION**.
@@ -2112,8 +2112,8 @@ $$\text{Geometry} \rightarrow \text{Component} \rightarrow \begin{cases} \text{D
 12. Scalar.
 13. Component = **HOW MUCH**; projection = **HOW MUCH × WHICH DIRECTION**.
 14. The direction of $a$, with magnitude 1.
-15. $\displaystyle \operatorname{proj}_a(b)=\operatorname{comp}_a(b)\hat a$.
-16. The scalar component already contains the amount needed for $a\cdot b=\|a\|\operatorname{comp}_a(b)$.
+15. $\displaystyle \mathrm{proj}_a(b)=\mathrm{comp}_a(b)\hat a$.
+16. The scalar component already contains the amount needed for $a\cdot b=\|a\|\mathrm{comp}_a(b)$.
 17. Either reference-direction interpretation produces the same scalar; the algebra is symmetric.
 18. $\|v\|^2$.
 19. $\sqrt{v\cdot v}$.
@@ -2139,15 +2139,15 @@ $$\text{Geometry} \rightarrow \text{Component} \rightarrow \begin{cases} \text{D
 39. The absolute dot product cannot exceed the product of the vector magnitudes.
 40. Geometry gives:
 
-$$\operatorname{comp}_a(b) = \|b\|\cos\theta$$
+$$\mathrm{comp}_a(b) = \|b\|\cos\theta$$
 
 then:
 
-$$\operatorname{comp}_a(b)\times\|a\| \rightarrow a\cdot b$$
+$$\mathrm{comp}_a(b)\times\|a\| \rightarrow a\cdot b$$
 
 while:
 
-$$\operatorname{comp}_a(b)\times\hat a \rightarrow \operatorname{proj}_a(b)$$
+$$\mathrm{comp}_a(b)\times\hat a \rightarrow \mathrm{proj}_a(b)$$
 
 ---
 
@@ -2181,7 +2181,7 @@ $$\boxed{ \text{SCALAR} }$$
 
 ## Card 3 — Three Views of the Same Dot Product
 
-$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\operatorname{comp}_a(b) }$$
+$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) }$$
 
 > **Components COMPUTE it.**
 
@@ -2193,7 +2193,7 @@ $$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\operatorname{comp}_a(b) }
 
 ## Card 4 — Component and Projection
 
-$$\boxed{ \operatorname{comp}_a(b) = \|b\|\cos\theta }$$
+$$\boxed{ \mathrm{comp}_a(b) = \|b\|\cos\theta }$$
 
 > **Component = HOW MUCH**
 
@@ -2201,13 +2201,13 @@ $$\boxed{ \hat a = \frac{a}{\|a\|} }$$
 
 > **Unit vector = WHICH DIRECTION**
 
-$$\boxed{ \operatorname{proj}_a(b) = \operatorname{comp}_a(b)\hat a }$$
+$$\boxed{ \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a }$$
 
 > **Projection = HOW MUCH × WHICH DIRECTION**
 
 And:
 
-$$\boxed{ \operatorname{comp}_a(b) \begin{cases} \times\|a\| \rightarrow a\cdot b\\ \times\hat a \rightarrow \operatorname{proj}_a(b) \end{cases} }$$
+$$\boxed{ \mathrm{comp}_a(b) \begin{cases} \times\|a\| \rightarrow a\cdot b\\ \times\hat a \rightarrow \mathrm{proj}_a(b) \end{cases} }$$
 
 ---
 
@@ -2269,7 +2269,7 @@ $$Ax=b$$
 
 And in matrix multiplication:
 
-$$\boxed{ C_{ij} = \operatorname{row}_i(A) \cdot \operatorname{column}_j(B) }$$
+$$\boxed{ C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) }$$
 
 ---
 
