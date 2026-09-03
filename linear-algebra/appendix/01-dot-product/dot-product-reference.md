@@ -78,7 +78,7 @@ uses those coordinate components.
 We will use the word **component** in two different ways:
 
 1. **Vector coordinate components** such as $a_1,a_2,\ldots$
-2. **Scalar component along a direction**, such as $\operatorname{comp}_a(b)$
+2. **Scalar component along a direction**, such as $\mathrm{comp}_a(b)$
 
 These are related ideas, but they are not the same object.
 
