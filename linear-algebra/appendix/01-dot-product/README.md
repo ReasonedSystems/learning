@@ -1,1 +1,1 @@
-# Dot Product Operation Reference
+# Dot Product Reference
