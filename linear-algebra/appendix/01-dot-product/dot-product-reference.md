@@ -438,11 +438,11 @@ $$b=[b_1,b_2,\ldots,b_n]$$
 
 Then:
 
-$$\boxed{ a\cdot b = \sum_{i=1}^{n}a_ib_i }$$
+$$a\cdot b = \sum_{i=1}^{n}a_ib_i $$
 
 In two dimensions:
 
-$$\boxed{ a\cdot b = a_1b_1+a_2b_2 }$$
+$$a\cdot b = a_1b_1+a_2b_2$$
 
 For example:
 
