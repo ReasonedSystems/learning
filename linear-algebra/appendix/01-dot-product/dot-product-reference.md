@@ -545,6 +545,8 @@ Magnitude still matters.
 
 ## 3.3 Scalar-Component View
 
+Go through [Vector Decomposition](#1.6-Vector-Decomposition) if you haven't yet.
+
 Now choose $a$ as the reference direction.
 
 This view begins from geometry rather than from the dot-product formula.
