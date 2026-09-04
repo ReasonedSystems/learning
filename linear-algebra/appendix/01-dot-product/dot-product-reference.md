@@ -28,6 +28,8 @@ The same displacement could start at $(5,4)$ and end at $(8,6)$, or start at $(-
 
 The tail can be translated freely without changing the vector.
 
+<img src="resources/vector.jpg" alt="vector" width="300">
+
 So:
 
 > **A vector is not a location. It is a displacement.**
