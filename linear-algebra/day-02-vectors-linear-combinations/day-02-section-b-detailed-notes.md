@@ -19,104 +19,124 @@ The recurring question is: **What vectors can be constructed, and what do the co
 
 ## 2. Vectors: displacement, not location
 
-A vector is an object with **magnitude** and **direction**. In 2D,
+A vector is an object with **magnitude** and **direction**. In 2D, 
 
-`v = [3, 2]ᵀ`
+$\begin{bmatrix}3\\\\2\end{bmatrix}$ means: 
 
-means: from the vector’s tail, move 3 units right and 2 units up. A vector is not tied to a particular location. For example, tails at `(0,0)`, `(5,4)`, and `(-2,7)` with the same displacement `(3,2)` represent the same vector.
+from the vector’s tail, move 3 units right and 2 units up. A vector is not tied to a particular location. For example, tails at $(0,0)$, $(5,4)$, and $(-2,7)$ with the same displacement $(3,2)$ represent the same vector.
 
-Drawing a vector from the coordinate origin is convenient, but it is a convention. A **point** `(3,2)` answers “where is it?” A **vector** `[3,2]ᵀ` answers “what displacement?” They can look identical when drawn from the origin but mean different things.
+Drawing a vector from the coordinate origin is convenient, but it is a convention. A **point** $(3,2)$ answers “where is it?” A **vector** $[3,2]ᵀ$ answers “what displacement?” They can look identical when drawn from the origin but mean different things.
 
 ### Vector representation
 
-A vector can be written as a column. A `3×1` column matrix is a standard representation of a 3D vector, but conceptually the vector is the mathematical object; the column is its notation/representation.
+A vector can be written as a column. A $3×1$ column matrix is a standard representation of a 3D vector, but conceptually the vector is the mathematical object; the column is its notation/representation.
 
 ## 3. Scaling and addition
 
-For scalar `c`, `cv` scales vector `v`:
+For scalar $c$, $cv$ scales vector $v$:
 
-- `c > 0`: same direction, `|c|` times the length.
-- `c < 0`: reversed direction and `|c|` times the length.
-- `c = 0`: the zero vector.
+- $c > 0$: same direction, $|c|$ times the length.
+- $c < 0$: reversed direction and $|c|$ times the length.
+- $c = 0$: the zero vector.
 
 Vectors add component-by-component:
 
-`[a,b]ᵀ + [c,d]ᵀ = [a+c, b+d]ᵀ`.
+$[a,b]ᵀ + [c,d]ᵀ = [a+c, b+d]ᵀ$.
 
 Geometrically, place the tail of the second arrow at the head of the first; the resultant goes from the first tail to the last head.
 
 ## 4. Linear combinations: adjustable directional contributions
 
-`x₁v₁ + x₂v₂ + ··· + xₙvₙ`
+$$x₁v₁ + x₂v₂ + ··· + xₙvₙ$$
 
-is a **linear combination**. Each `xᵢ` is a real-number **scalar coefficient**, not a vector. Multiply each vector by its coefficient, then add the resulting component contributions.
+is a **linear combination**. Each $xᵢ$ is a real-number **scalar coefficient**, not a vector. Multiply each vector by its coefficient, then add the resulting component contributions.
 
 Example:
 
-`v₁=[1,2]ᵀ`, `v₂=[3,-1]ᵀ`; then
+$v₁=[1,2]ᵀ$, $v₂=[3,-1]ᵀ$; then
 
-`2v₁ - v₂ = [2,4]ᵀ + [-3,1]ᵀ = [-1,5]ᵀ`.
+$2v₁ - v₂ = [2,4]ᵀ + [-3,1]ᵀ = [-1,5]ᵀ$.
 
-Useful precise wording: “Given vectors `u,v`, which points/vectors can be reached by `au+bv` as scalar coefficients `a,b` range over ℝ?” This avoids ambiguity about what varies and what is multiplied.
+Useful precise wording: “Given vectors $u,v$, which points/vectors can be reached by $au+bv$ as scalar coefficients $a,b$ range over ℝ?” This avoids ambiguity about what varies and what is multiplied.
 
 ## 5. Matrix–vector multiplication: the same operation, two pictures
 
-Let `A` have columns `a₁,…,aₙ`, and let `x=[x₁,…,xₙ]ᵀ`. Then
+Let $A$ have columns $a₁,…,aₙ$, and let $x=[x₁,…,xₙ]ᵀ$. Then
 
-`Ax = x₁a₁ + x₂a₂ + ··· + xₙaₙ`.
+$Ax = x₁a₁ + x₂a₂ + ··· + xₙaₙ$.
 
 ### Column view — construction
 
-`Ax=b` asks: **Can the columns of `A` be combined to make target `b`? If so, what coefficients in `x` do it?** This is not a random search; solving for the coefficients is the same linear-system problem used in the row view. This picture prepares span, independence, transformations, and neural-network layers.
+$Ax=b$ asks: **Can the columns of $A$ be combined to make target $b$? If so, what coefficients in $x$ do it?** This is not a random search; solving for the coefficients is the same linear-system problem used in the row view. This picture prepares span, independence, transformations, and neural-network layers.
 
 ### Row view — measurements/constraints
 
-If the rows of `A` are `r₁ᵀ,…,rₘᵀ`, then the entries of `Ax` are `rᵢᵀx`. Each row takes a dot product with `x`. For `Ax=b`, each row is one equation/constraint; in 2D, each equation can be visualized as a line, and the solution is their intersection.
+If the rows of $A$ are $r₁ᵀ,…,rₘᵀ$, then the entries of $Ax$ are $rᵢᵀx$. Each row takes a dot product with $x$. For $Ax=b$, each row is one equation/constraint; in 2D, each equation can be visualized as a line, and the solution is their intersection.
 
 Both statements are true at once:
 
-`Ax =` columns of `A` combined using `x`  
-`Ax =` rows of `A` each dotted with `x`
+$Ax =$ columns of $A$ combined using $x$  
+$Ax =$ rows of $A$ each dotted with $x$
 
 ### Dimensions
 
 Matrix multiplication is defined when inner dimensions match:
 
-`(m×n)(n×p) = (m×p)`.
+$(m×n)(n×p) = (m×p)$.
 
-So a matrix product can be a matrix, column vector, row vector, or `1×1` scalar. A dot product is the familiar row-by-column special case and returns one scalar.
+So a matrix product can be a matrix, column vector, row vector, or $1×1$ scalar. A dot product is the familiar row-by-column special case and returns one scalar.
 
 ## 6. Dot product, length, and orthogonality
 
 For equal-length vectors,
 
-`u·v = Σᵢuᵢvᵢ = ‖u‖‖v‖cosθ`.
+$u·v = Σᵢuᵢvᵢ = ‖u‖‖v‖cosθ$.
 
 The dot product returns a scalar. It does not transform the input vectors; it measures their relationship. A useful mental model is:
 
 **dot product = magnitude-weighted alignment.**
 
 - Same direction: positive and largest for fixed lengths.
-- Perpendicular: `cos 90° = 0`, hence dot product `0` regardless of length.
+- Perpendicular: $cos 90° = 0$, hence dot product $0$ regardless of length.
 - Opposite direction: negative.
 
 Magnitude is
 
-`‖v‖ = √(v·v) = √(Σᵢvᵢ²)`.
+$‖v‖ = √(v·v) = √(Σᵢvᵢ²)$.
 
-Thus `v·v = ‖v‖²`: algebraically it is the sum of squared components; geometrically the angle of `v` with itself is zero.
+Thus $v·v = ‖v‖²$: algebraically it is the sum of squared components; geometrically the angle of $v$ with itself is zero.
 
 ### Alignment versus correlation-like intuition
 
-For `r=[3,0]ᵀ`, `v₁=[5,0]ᵀ`, and `v₂=[6,0]ᵀ`, both pairs are perfectly directionally aligned:
+For $r=[3,0]ᵀ$, $v₁=[5,0]ᵀ$, and $v₂=[6,0]ᵀ$, both pairs are perfectly directionally aligned:
 
-`cosθ = 1` in both cases.
+$cosθ = 1$ in both cases.
 
-But `r·v₁=15` and `r·v₂=18`, because the raw dot product preserves the larger aligned magnitude. If only direction is wanted, use cosine similarity:
+But $r·v₁=15$ and $r·v₂=18$, because the raw dot product preserves the larger aligned magnitude. If only direction is wanted, use cosine similarity:
 
-`(u·v)/(‖u‖‖v‖) = cosθ` for nonzero vectors.
+$(u·v)/(‖u‖‖v‖) = cosθ$ for nonzero vectors.
 
 Do not equate raw dot product with statistical correlation. Cosine similarity is closer to the “ignore overall magnitude” intuition, but it is still not the same thing as statistical correlation.
+
+### Scalar component and projection — keep the objects separate
+
+Relative to reference vector $u$, the **scalar component** of $v$ along $u$ answers **HOW MUCH of $v$ lies along $u$'s direction**:
+
+$comp_u(v)=‖v‖cosθ$.
+
+This is a signed scalar. The dot product can therefore be read as $u·v=‖u‖\,comp_u(v)$.
+
+The **projection** adds direction. With unit vector $û=u/‖u‖$:
+
+$proj_u(v)=comp_u(v)\,û$.
+
+Remember the branch: **scalar component (HOW MUCH) → × $‖u‖$ gives the dot product; × $û$ gives the projection vector (HOW MUCH × WHICH DIRECTION).**
+
+Projection is useful for decomposition $v=v_{parallel}+v_{perpendicular}$, but it is **not required to calculate the dot product**. The perpendicular part contributes zero.
+
+### Equal dot products do not imply equal alignment
+
+Because $u·v=‖u‖‖v‖cosθ$, different magnitude–angle combinations can produce the same dot product. A longer vector with weaker alignment can compensate for a shorter vector with stronger alignment. Therefore, **equal/larger raw dot products do not by themselves mean equal/better directional alignment**; cosine similarity removes the magnitude factors.
 
 ## 7. Span, dependence, and independence
 
@@ -126,11 +146,11 @@ The **span** of vectors is the set of every linear combination they can produce.
 - Two non-parallel vectors in 2D span the whole plane.
 - Two parallel vectors still span only a line.
 
-Vectors `v₁,…,vₙ` are **linearly independent** when
+Vectors $v₁,…,vₙ$ are **linearly independent** when
 
-`x₁v₁ + ··· + xₙvₙ = 0`
+$$x₁v₁ + ··· + xₙvₙ = 0$$
 
-has only the trivial solution `x₁=···=xₙ=0`.
+has only the trivial solution $x₁=···=xₙ=0$.
 
 They are **dependent** when some nontrivial (not all zero) coefficient combination gives zero. Cancellation is possible; this is why “zero result means every coefficient is zero” is not generally valid.
 
@@ -142,13 +162,15 @@ Independence means no vector is redundant: none can be built from the others.
 |---|---|---|
 | **Conceptual error** | “If a combination gives zero, all coefficients must be zero.” | Vectors can cancel. Ask: “Is this the *only* coefficient choice?” Only then conclude independence. |
 | **Conceptual error** | “Dot product is only multiply-and-add / changes vectors.” | It is a scalar measurement of magnitude-weighted alignment; the input vectors remain as they are. |
-| **Incomplete mental model** | “The column picture is trial and error.” | It asks for coefficients that construct `b`; solve them systematically. Row and column pictures are complementary, not competing methods. |
+| **Incomplete mental model** | “The column picture is trial and error.” | It asks for coefficients that construct $b$; solve them systematically. Row and column pictures are complementary, not competing methods. |
 | **Incomplete mental model** | “The origin matters to the vector.” | The vector is tail-to-head displacement; moving the whole arrow does not change it. |
-| **Recall / notation failure** | `v·v` is the length. | `v·v=‖v‖²`; the length is `‖v‖=√(v·v)`. |
-| **Recall / notation failure** | “Matrix multiplication always yields a matrix or vector.” | Check dimensions: `(m×n)(n×p)=(m×p)`; a `1×1` result is scalar. |
-| **Correct understanding** | “Scale each vector by `x₁,x₂,…`, then add/subtract directional units.” | Correct. Refine the wording: add the scaled vectors component-by-component to get the resultant. |
+| **Recall / notation failure** | $v·v$ is the length. | $v·v=‖v‖²$; the length is $‖v‖=√(v·v)$. |
+| **Recall / notation failure** | “Matrix multiplication always yields a matrix or vector.” | Check dimensions: $(m×n)(n×p)=(m×p)$; a $1×1$ result is scalar. |
+| **Correct understanding** | “Scale each vector by $x₁,x₂,…$, then add/subtract directional units.” | Correct. Refine the wording: add the scaled vectors component-by-component to get the resultant. |
 | **Correct understanding** | “Magnitude should not matter when vectors are perfectly correlated/aligned.” | Correct for *pure directional alignment*. Raw dot product also retains magnitude; cosine similarity normalizes it away. |
 | **Correct understanding** | “Orthogonal vectors stay at dot product zero even if magnitude changes.” | Correct, because the cosine factor is zero. |
+| **Conceptual error** | “Scalar component, projection, and dot product are basically the same thing.” | Component = signed scalar HOW MUCH; projection = vector HOW MUCH × WHICH DIRECTION; dot product = reference magnitude × scalar component. |
+| **Conceptual error** | “A larger dot product always means better alignment.” | Raw dot also contains both magnitudes. Ask whether magnitude should matter; if not, compare cosine similarity. |
 
 ## 9. Sources and breadcrumbs
 
