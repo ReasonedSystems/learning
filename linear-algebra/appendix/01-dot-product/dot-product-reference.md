@@ -161,6 +161,8 @@ The usual geometric interpretations are:
 - tip-to-tail addition
 - parallelogram addition
 
+<img src="resources/vector-addition.png" alt="vector-addition" width="1000">
+
 The important contrast for later is:
 
 > **Vector addition produces a vector.**
@@ -173,16 +175,18 @@ The dot product will produce a scalar.
 
 A vector can be decomposed relative to another direction.
 
-Suppose we use vector $a$ as the reference direction.
+<img src="resources/vector-decomposition.png" alt="vector-decomposition" width="300">
 
-Then vector $b$ can be split into:
+Suppose we use vector $a$ (blue line) as the reference direction.
+
+Then vector $b$ (red line) can be split into:
 
 $$\boxed{ b=b_{\parallel}+b_{\perp} }$$
 
 where:
 
-- $b_{\parallel}$ is parallel to $a$
-- $b_{\perp}$ is perpendicular to $a$
+- $b_{\parallel}$ is parallel to $a$ (pink line)
+- $b_{\perp}$ is perpendicular to $a$ (green line)
 
 The parallel part is the vector projection of $b$ onto the direction of $a$:
 
