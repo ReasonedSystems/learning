@@ -94,7 +94,7 @@ $$\begin{bmatrix} 3 & 2 \end{bmatrix}$$
 
 or as a column:
 
-$$\begin{bmatrix} 3\\ 2 \end{bmatrix}$$
+$$\begin{bmatrix} 3\\\\ 2 \end{bmatrix}$$
 
 In many linear-algebra calculations, column notation is conventional because it fits naturally into expressions such as:
 
