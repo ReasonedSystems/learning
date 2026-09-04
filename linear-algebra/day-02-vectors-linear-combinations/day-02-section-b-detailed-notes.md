@@ -21,11 +21,11 @@ The recurring question is: **What vectors can be constructed, and what do the co
 
 A vector is an object with **magnitude** and **direction**. In 2D, 
 
-$\begin{bmatrix}3\\\\2\end{bmatrix}$ means: 
+$`\begin{bmatrix} 3 \\ 2 \end{bmatrix}`$ means 
 
 from the vector’s tail, move 3 units right and 2 units up. A vector is not tied to a particular location. For example, tails at $(0,0)$, $(5,4)$, and $(-2,7)$ with the same displacement $(3,2)$ represent the same vector.
 
-Drawing a vector from the coordinate origin is convenient, but it is a convention. A **point** $(3,2)$ answers “where is it?” A **vector** $[3,2]ᵀ$ answers “what displacement?” They can look identical when drawn from the origin but mean different things.
+Drawing a vector from the coordinate origin is convenient, but it is a convention. A **point** $(3,2)$ answers “where is it?” A **vector** $`\begin{bmatrix} 3 \\ 2 \end{bmatrix}`$ means answers “what displacement?” They can look identical when drawn from the origin but mean different things.
 
 ### Vector representation
 
