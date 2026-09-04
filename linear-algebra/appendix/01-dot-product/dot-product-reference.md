@@ -114,7 +114,7 @@ $$v=[v_1,v_2]$$
 
 the magnitude is:
 
-$$\color{brown}  \|v\| = \sqrt{v_1^2+v_2^2} $$
+$$\boxed{ \|v\| = \sqrt{v_1^2+v_2^2} }$$
 
 For:
 
@@ -126,7 +126,7 @@ $$\|v\| = \sqrt{3^2+2^2} = \sqrt{13}$$
 
 In $n$ dimensions:
 
-$$\color{brown}  \|v\| = \sqrt{ v_1^2+v_2^2+\cdots+v_n^2 } $$
+$$\boxed{ \|v\| = \sqrt{ v_1^2+v_2^2+\cdots+v_n^2 } }$$
 
 This is the generalized Pythagorean length.
 
@@ -148,7 +148,7 @@ $$a+b = [3+5,\;3+1]$$
 
 so:
 
-$$\color{brown}  a+b=[8,4] $$
+$$\boxed{ a+b=[8,4] }$$
 
 Vector addition produces another **vector**.
 
@@ -175,7 +175,7 @@ Suppose we use vector $a$ as the reference direction.
 
 Then vector $b$ can be split into:
 
-$$\color{brown}  b=b_{\parallel}+b_{\perp} $$
+$$\boxed{ b=b_{\parallel}+b_{\perp} }$$
 
 where:
 
@@ -232,7 +232,7 @@ $$a\cdot b = 3(5)+3(1) = 18$$
 
 So:
 
-$$\color{brown}  a\cdot b=18 $$
+$$\boxed{ a\cdot b=18 }$$
 
 The output is not:
 
@@ -251,13 +251,13 @@ Conceptually, the scalar captures a signed relationship between the two vectors.
 
 The geometric formula is:
 
-$$\color{brown}  a\cdot b = \|a\|\|b\|\cos\theta $$
+$$\boxed{ a\cdot b = \|a\|\|b\|\cos\theta }$$
 
 where $\theta$ is the angle between the vectors.
 
 The most useful mental model is:
 
-$$\color{brown}  \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} $$
+$$\boxed{ \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} }$$
 
 The two magnitude terms tell us how long the vectors are.
 
@@ -317,7 +317,7 @@ mean:
 
 Then:
 
-$$\color{brown}  a\cdot b = \|a\| \mathrm{comp}_a(b) $$
+$$\boxed{ a\cdot b = \|a\| \mathrm{comp}_a(b) }$$
 
 This gives another mental model:
 
@@ -333,7 +333,7 @@ $$a\cdot b_{\perp}=0$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b = a\cdot b_{\parallel} $$
+$$\boxed{ a\cdot b = a\cdot b_{\parallel} }$$
 
 Only the parallel amount contributes.
 
@@ -343,7 +343,7 @@ Only the parallel amount contributes.
 
 The dot product is symmetric:
 
-$$\color{brown}  a\cdot b=b\cdot a $$
+$$\boxed{ a\cdot b=b\cdot a }$$
 
 So both of these interpretations are valid:
 
@@ -378,33 +378,33 @@ If we want to remove vector magnitudes and preserve only directional alignment, 
 
 ### Symmetry
 
-$$\color{brown}  a\cdot b=b\cdot a $$
+$$\boxed{ a\cdot b=b\cdot a }$$
 
 ### Distributivity
 
-$$\color{brown}  a\cdot(b+c) = a\cdot b+a\cdot c $$
+$$\boxed{ a\cdot(b+c) = a\cdot b+a\cdot c }$$
 
 ### Scalar multiplication
 
-$$\color{brown}  (\lambda a)\cdot b = \lambda(a\cdot b) $$
+$$\boxed{ (\lambda a)\cdot b = \lambda(a\cdot b) }$$
 
 ### Self-dot
 
-$$\color{brown}  a\cdot a = \|a\|^2 $$
+$$\boxed{ a\cdot a = \|a\|^2 }$$
 
 Therefore:
 
-$$\color{brown}  \|a\| = \sqrt{a\cdot a} $$
+$$\boxed{ \|a\| = \sqrt{a\cdot a} }$$
 
 ---
 
 ## Section 2 Mental-Model Card
 
-$$\color{brown}  \text{Dot product} = \text{magnitude} \times \text{magnitude} \times \text{alignment} $$
+$$\boxed{ \text{Dot product} = \text{magnitude} \times \text{magnitude} \times \text{alignment} }$$
 
 and equivalently:
 
-$$\color{brown}  a\cdot b = \|a\| \times \text{HOW MUCH of }b\text{ lies along }a $$
+$$\boxed{ a\cdot b = \|a\| \times \text{HOW MUCH of }b\text{ lies along }a }$$
 
 > **Dot product → scalar**
 
@@ -438,11 +438,11 @@ $$b=[b_1,b_2,\ldots,b_n]$$
 
 Then:
 
-$$\color{brown}  a\cdot b = \sum_{i=1}^{n}a_ib_i $$
+$$\boxed{ a\cdot b = \sum_{i=1}^{n}a_ib_i }$$
 
 In two dimensions:
 
-$$\color{brown}  a\cdot b = a_1b_1+a_2b_2 $$
+$$\boxed{ a\cdot b = a_1b_1+a_2b_2 }$$
 
 For example:
 
@@ -464,7 +464,7 @@ They are different from the scalar directional component $\mathrm{comp}_a(b)$ in
 
 The geometric formula is:
 
-$$\color{brown}  a\cdot b = \|a\|\|b\|\cos\theta $$
+$$\boxed{ a\cdot b = \|a\|\|b\|\cos\theta }$$
 
 This tells us **why** the coordinate formula has geometric meaning.
 
@@ -508,7 +508,7 @@ $$-2a\cdot b = -2\|a\|\|b\|\cos\theta$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b = \|a\|\|b\|\cos\theta $$
+$$\boxed{ a\cdot b = \|a\|\|b\|\cos\theta }$$
 
 So the coordinate rule and geometric rule are exactly equivalent.
 
@@ -518,7 +518,7 @@ So the coordinate rule and geometric rule are exactly equivalent.
 
 This formula produces the central mental model:
 
-$$\color{brown}  \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} $$
+$$\boxed{ \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} }$$
 
 The $\cos\theta$ factor behaves like this:
 
@@ -549,7 +549,7 @@ This view begins from geometry rather than from the dot-product formula.
 
 The signed scalar amount of $b$ lying along the direction of $a$ is:
 
-$$\color{brown}  \mathrm{comp}_a(b) = \|b\|\cos\theta $$
+$$\boxed{ \mathrm{comp}_a(b) = \|b\|\cos\theta }$$
 
 This is a **scalar**.
 
@@ -573,11 +573,11 @@ $$\mathrm{comp}_a(b) = \|b\|\cos\theta$$
 
 we obtain:
 
-$$\color{brown}  a\cdot b = \|a\| \mathrm{comp}_a(b) $$
+$$\boxed{ a\cdot b = \|a\| \mathrm{comp}_a(b) }$$
 
 Therefore:
 
-$$\color{brown}  \mathrm{comp}_a(b) = \frac{a\cdot b}{\|a\|} $$
+$$\boxed{ \mathrm{comp}_a(b) = \frac{a\cdot b}{\|a\|} }$$
 
 This is the scalar-component interpretation of the dot product.
 
@@ -597,7 +597,7 @@ For that we need:
 
 The unit vector in the direction of $a$ is:
 
-$$\color{brown}  \hat a = \frac{a}{\|a\|} $$
+$$\boxed{ \hat a = \frac{a}{\|a\|} }$$
 
 It tells us:
 
@@ -605,7 +605,7 @@ It tells us:
 
 Now multiply the scalar component by this unit direction:
 
-$$\color{brown}  \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a $$
+$$\boxed{ \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a }$$
 
 So:
 
@@ -617,7 +617,7 @@ $$\mathrm{proj}_a(b) = \frac{a\cdot b}{\|a\|} \frac{a}{\|a\|}$$
 
 Therefore:
 
-$$\color{brown}  \mathrm{proj}_a(b) = \frac{a\cdot b}{\|a\|^2}a $$
+$$\boxed{ \mathrm{proj}_a(b) = \frac{a\cdot b}{\|a\|^2}a }$$
 
 Since:
 
@@ -625,7 +625,7 @@ $$\|a\|^2=a\cdot a$$
 
 we can also write:
 
-$$\color{brown}  \mathrm{proj}_a(b) = \frac{a\cdot b}{a\cdot a}a $$
+$$\boxed{ \mathrm{proj}_a(b) = \frac{a\cdot b}{a\cdot a}a }$$
 
 Projection is not required to calculate the dot product.
 
@@ -635,7 +635,7 @@ Its purpose is different:
 
 Then:
 
-$$\color{brown}  b = \mathrm{proj}_a(b) + b_{\perp} $$
+$$\boxed{ b = \mathrm{proj}_a(b) + b_{\perp} }$$
 
 ---
 
@@ -651,13 +651,13 @@ we can branch in two different directions.
 
 Multiply by the magnitude of $a$:
 
-$$\color{brown}  \mathrm{comp}_a(b)\|a\| = a\cdot b $$
+$$\boxed{ \mathrm{comp}_a(b)\|a\| = a\cdot b }$$
 
 to obtain the dot product.
 
 Or multiply by the unit direction of $a$:
 
-$$\color{brown}  \mathrm{comp}_a(b)\hat a = \mathrm{proj}_a(b) $$
+$$\boxed{ \mathrm{comp}_a(b)\hat a = \mathrm{proj}_a(b) }$$
 
 to obtain the projection vector.
 
@@ -678,7 +678,7 @@ So the conceptual structure is:
 
 The three actual dot-product views are:
 
-$$\color{brown}  \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) $$
+$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) }$$
 
 | View | Formula | Best mental use |
 |---|---|---|
@@ -734,7 +734,7 @@ $$= 15+3$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b=18 $$
+$$\boxed{ a\cdot b=18 }$$
 
 This is the easiest computational route:
 
@@ -774,7 +774,7 @@ Therefore the angle between them is:
 
 $$\theta \approx45^\circ-11.31^\circ$$
 
-$$\color{brown}  \theta\approx33.69^\circ $$
+$$\boxed{ \theta\approx33.69^\circ }$$
 
 Now use:
 
@@ -786,11 +786,11 @@ $$a\cdot b = \sqrt{18}\sqrt{26}\cos33.69^\circ$$
 
 which gives:
 
-$$\color{brown}  a\cdot b\approx18 $$
+$$\boxed{ a\cdot b\approx18 }$$
 
 So the same result can be interpreted as:
 
-$$\color{brown}  18 = \text{magnitude of }a \times \text{magnitude of }b \times \text{alignment} $$
+$$\boxed{ 18 = \text{magnitude of }a \times \text{magnitude of }b \times \text{alignment} }$$
 
 ---
 
@@ -806,7 +806,7 @@ $$\mathrm{comp}_a(b) = \sqrt{26}\cos33.69^\circ$$
 
 which evaluates to:
 
-$$\color{brown}  \mathrm{comp}_a(b) = \sqrt{18} $$
+$$\boxed{ \mathrm{comp}_a(b) = \sqrt{18} }$$
 
 Now use:
 
@@ -818,7 +818,7 @@ $$a\cdot b = \sqrt{18}\times\sqrt{18}$$
 
 so:
 
-$$\color{brown}  a\cdot b=18 $$
+$$\boxed{ a\cdot b=18 }$$
 
 Interpretation:
 
@@ -842,7 +842,7 @@ $$\mathrm{proj}_a(b) = \sqrt{18} \frac{[3,3]}{\sqrt{18}}$$
 
 Therefore:
 
-$$\color{brown}  \mathrm{proj}_a(b) = [3,3] = a $$
+$$\boxed{ \mathrm{proj}_a(b) = [3,3] = a }$$
 
 This is a convenient geometric coincidence in this example:
 
@@ -876,15 +876,15 @@ $$= [5,1]-[3,3]$$
 
 so:
 
-$$\color{brown}  b_{\perp} = [2,-2] $$
+$$\boxed{ b_{\perp} = [2,-2] }$$
 
 Thus:
 
-$$\color{brown}  b = [3,3]+[2,-2] $$
+$$\boxed{ b = [3,3]+[2,-2] }$$
 
 or:
 
-$$\color{brown}  b = b_{\parallel}+b_{\perp} $$
+$$\boxed{ b = b_{\parallel}+b_{\perp} }$$
 
 ---
 
@@ -900,7 +900,7 @@ $$= 6-6$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b_{\perp}=0 $$
+$$\boxed{ a\cdot b_{\perp}=0 }$$
 
 By distributivity:
 
@@ -910,7 +910,7 @@ $$= a\cdot b_{\parallel} + a\cdot b_{\perp}$$
 
 Since the perpendicular term is zero:
 
-$$\color{brown}  a\cdot b = a\cdot b_{\parallel} $$
+$$\boxed{ a\cdot b = a\cdot b_{\parallel} }$$
 
 This verifies the key geometric idea:
 
@@ -928,7 +928,7 @@ This verifies the key geometric idea:
 
 So:
 
-$$\color{brown}  3(5)+3(1) = \sqrt{18}\sqrt{26}\cos33.69^\circ = \sqrt{18}\mathrm{comp}_a(b) = 18 $$
+$$\boxed{ 3(5)+3(1) = \sqrt{18}\sqrt{26}\cos33.69^\circ = \sqrt{18}\mathrm{comp}_a(b) = 18 }$$
 
 and:
 
@@ -956,11 +956,11 @@ Projection is subordinate to the scalar-component view, not a fourth independent
 
 We established:
 
-$$\color{brown}  a\cdot b = \|a\|\|b\|\cos\theta $$
+$$\boxed{ a\cdot b = \|a\|\|b\|\cos\theta }$$
 
 Therefore a raw dot product contains two kinds of information:
 
-$$\color{brown}  \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} $$
+$$\boxed{ \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} }$$
 
 Sometimes this is exactly what we want.
 
@@ -984,7 +984,7 @@ $$\frac{a\cdot b} {\|a\|\|b\|} = \cos\theta$$
 
 Therefore:
 
-$$\color{brown}  \mathrm{cosine\ similarity}(a,b) = \frac{a\cdot b} {\|a\|\|b\|} $$
+$$\boxed{ \mathrm{cosine\ similarity}(a,b) = \frac{a\cdot b} {\|a\|\|b\|} }$$
 
 ### Zero-Vector Caveat
 
@@ -1000,11 +1000,11 @@ and the cosine-similarity formula would require division by zero. Therefore:
 
 Conceptually:
 
-$$\color{brown}  \text{Cosine Similarity} = \frac{ \text{MAGNITUDE}\times\text{MAGNITUDE}\times\text{ALIGNMENT} }{ \text{MAGNITUDE}\times\text{MAGNITUDE} } $$
+$$\boxed{ \text{Cosine Similarity} = \frac{ \text{MAGNITUDE}\times\text{MAGNITUDE}\times\text{ALIGNMENT} }{ \text{MAGNITUDE}\times\text{MAGNITUDE} } }$$
 
 leaving:
 
-$$\color{brown}  \text{Cosine Similarity} = \text{ALIGNMENT} $$
+$$\boxed{ \text{Cosine Similarity} = \text{ALIGNMENT} }$$
 
 So the simplest distinction is:
 
@@ -1038,21 +1038,21 @@ $$\hat a\cdot\hat b = (1)(1)\cos\theta$$
 
 Therefore:
 
-$$\color{brown}  \hat a\cdot\hat b = \cos\theta $$
+$$\boxed{ \hat a\cdot\hat b = \cos\theta }$$
 
 Hence:
 
-$$\color{brown}  \text{Dot product of unit-normalized vectors} = \text{Cosine similarity} $$
+$$\boxed{ \text{Dot product of unit-normalized vectors} = \text{Cosine similarity} }$$
 
 This gives two equivalent procedures.
 
 ### Method 1 — Dot first, remove magnitudes afterward
 
-$$\color{brown}  \cos\theta = \frac{a\cdot b}{\|a\|\|b\|} $$
+$$\boxed{ \cos\theta = \frac{a\cdot b}{\|a\|\|b\|} }$$
 
 ### Method 2 — Remove magnitudes first, then dot
 
-$$\color{brown}  \cos\theta = \left(\frac{a}{\|a\|}\right) \cdot \left(\frac{b}{\|b\|}\right) $$
+$$\boxed{ \cos\theta = \left(\frac{a}{\|a\|}\right) \cdot \left(\frac{b}{\|b\|}\right) }$$
 
 Same mathematics. Same result.
 
@@ -1146,7 +1146,7 @@ $$a\cdot c = 3(10) = 30$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b \ne a\cdot c $$
+$$\boxed{ a\cdot b \ne a\cdot c }$$
 
 even though both pairs are perfectly aligned.
 
@@ -1164,7 +1164,7 @@ $$\cos(a,c) = \frac{30}{(3)(10)} = 1$$
 
 Therefore:
 
-$$\color{brown}  \cos(a,b) = \cos(a,c) = 1 $$
+$$\boxed{ \cos(a,b) = \cos(a,c) = 1 }$$
 
 Cosine similarity answers the narrower question:
 
@@ -1188,7 +1188,7 @@ They answer different questions.
 
 The decision trigger is:
 
-$$\color{brown}  \textbf{Do we want magnitude to matter here, or do we want to remove it?} $$
+$$\boxed{ \textbf{Do we want magnitude to matter here, or do we want to remove it?} }$$
 
 If magnitude carries useful information:
 
@@ -1220,15 +1220,15 @@ Cosine similarity simply measures the directional relationship between those rep
 
 ## Section 5 Mental-Model Card
 
-$$\color{brown}  \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} $$
+$$\boxed{ \text{Dot Product} = \text{MAGNITUDE} \times \text{MAGNITUDE} \times \text{ALIGNMENT} }$$
 
 Remove the magnitudes:
 
-$$\color{brown}  \text{Cosine Similarity} = \text{ALIGNMENT} $$
+$$\boxed{ \text{Cosine Similarity} = \text{ALIGNMENT} }$$
 
 Equivalently:
 
-$$\color{brown}  \text{Cosine Similarity} = \text{Dot Product of Unit-Normalized Vectors} $$
+$$\boxed{ \text{Cosine Similarity} = \text{Dot Product of Unit-Normalized Vectors} }$$
 
 Decision question:
 
@@ -1272,7 +1272,7 @@ $$\cos0^\circ = 1$$
 
 we get:
 
-$$\color{brown}  a\cdot b_1 = L^2 $$
+$$\boxed{ a\cdot b_1 = L^2 }$$
 
 ### Case 2 — Larger Magnitude, Weaker Alignment
 
@@ -1300,11 +1300,11 @@ $$a\cdot b_2 = L\cdot2L\cdot\frac12$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b_2 = L^2 $$
+$$\boxed{ a\cdot b_2 = L^2 }$$
 
 So:
 
-$$\color{brown}  a\cdot b_1 = a\cdot b_2 = L^2 $$
+$$\boxed{ a\cdot b_1 = a\cdot b_2 = L^2 }$$
 
 Yet:
 
@@ -1316,7 +1316,7 @@ $$\theta_2 = 60^\circ$$
 
 Therefore:
 
-$$\color{brown}  \text{Equal dot products do NOT imply equal alignment} $$
+$$\boxed{ \text{Equal dot products do NOT imply equal alignment} }$$
 
 ---
 
@@ -1339,7 +1339,7 @@ The two effects exactly compensate.
 
 Conceptually:
 
-$$\color{brown}  2\times\frac12 = 1 $$
+$$\boxed{ 2\times\frac12 = 1 }$$
 
 ---
 
@@ -1361,11 +1361,11 @@ $$= 2L\left(\frac12\right)$$
 
 so:
 
-$$\color{brown}  \mathrm{comp}_a(b_2) = L $$
+$$\boxed{ \mathrm{comp}_a(b_2) = L }$$
 
 Therefore:
 
-$$\color{brown}  \mathrm{comp}_a(b_1) = \mathrm{comp}_a(b_2) = L $$
+$$\boxed{ \mathrm{comp}_a(b_1) = \mathrm{comp}_a(b_2) = L }$$
 
 This reveals the deeper reason the dot products are equal:
 
@@ -1385,19 +1385,19 @@ then raw dot product cannot distinguish these two cases.
 
 For $b_1$:
 
-$$\cos\theta_1 = \cos0^\circ = \color{brown} 1$$
+$$\cos\theta_1 = \cos0^\circ = \boxed{1}$$
 
 For $b_2$:
 
-$$\cos\theta_2 = \cos60^\circ = \color{brown} 0.5$$
+$$\cos\theta_2 = \cos60^\circ = \boxed{0.5}$$
 
 Therefore:
 
-$$\color{brown}  \cos(a,b_1) = 1 $$
+$$\boxed{ \cos(a,b_1) = 1 }$$
 
 while:
 
-$$\color{brown}  \cos(a,b_2) = 0.5 $$
+$$\boxed{ \cos(a,b_2) = 0.5 }$$
 
 Now the directional difference is visible immediately.
 
@@ -1419,7 +1419,7 @@ Likewise, equal dot products can hide very different directional relationships.
 
 The safer mental model is:
 
-$$\color{brown}  \text{Dot Product} = \text{MAGNITUDE-WEIGHTED ALIGNMENT} $$
+$$\boxed{ \text{Dot Product} = \text{MAGNITUDE-WEIGHTED ALIGNMENT} }$$
 
 not merely:
 
@@ -1443,11 +1443,11 @@ not from the dot product.
 
 So:
 
-$$\color{brown}  a\cdot b_1 = a\cdot b_2 $$
+$$\boxed{ a\cdot b_1 = a\cdot b_2 }$$
 
 does **not** imply:
 
-$$\color{brown}  a+b_1 = a+b_2 $$
+$$\boxed{ a+b_1 = a+b_2 }$$
 
 ---
 
@@ -1455,7 +1455,7 @@ $$\color{brown}  a+b_1 = a+b_2 $$
 
 Two different vector pairs can satisfy:
 
-$$\color{brown}  a\cdot b_1 = a\cdot b_2 $$
+$$\boxed{ a\cdot b_1 = a\cdot b_2 }$$
 
 even when:
 
@@ -1463,11 +1463,11 @@ $$\theta_1 \ne \theta_2$$
 
 because:
 
-$$\color{brown}  \text{magnitude and alignment can compensate for each other} $$
+$$\boxed{ \text{magnitude and alignment can compensate for each other} }$$
 
 In the example:
 
-$$\color{brown}  L\times L\times1 = L\times2L\times\frac12 = L^2 $$
+$$\boxed{ L\times L\times1 = L\times2L\times\frac12 = L^2 }$$
 
 Durable distinction:
 
@@ -1501,7 +1501,7 @@ $$v=[v_1,v_2]$$
 
 Vector addition is:
 
-$$\color{brown}  u+v = [u_1+v_1,\;u_2+v_2] $$
+$$\boxed{ u+v = [u_1+v_1,\;u_2+v_2] }$$
 
 The output is another vector.
 
@@ -1525,7 +1525,7 @@ The question being answered is:
 
 So:
 
-$$\color{brown}  \text{Vector + Vector} \rightarrow \text{Vector} $$
+$$\boxed{ \text{Vector + Vector} \rightarrow \text{Vector} }$$
 
 ---
 
@@ -1557,13 +1557,13 @@ $$= [2,4]+[-3,1]$$
 
 so:
 
-$$\color{brown}  2u-v = [-1,5] $$
+$$\boxed{ 2u-v = [-1,5] }$$
 
 The output is a vector.
 
 More generally:
 
-$$\color{brown}  x_1v_1+x_2v_2+\cdots+x_nv_n $$
+$$\boxed{ x_1v_1+x_2v_2+\cdots+x_nv_n }$$
 
 is a linear combination.
 
@@ -1587,13 +1587,13 @@ The corresponding components are multiplied and those numbers are added.
 
 The result is one scalar:
 
-$$\color{brown}  u\cdot v \rightarrow \text{scalar} $$
+$$\boxed{ u\cdot v \rightarrow \text{scalar} }$$
 
 Conceptually, we are not constructing a new displacement.
 
 We are measuring a scalar relationship between the vectors:
 
-$$\color{brown}  u\cdot v = \|u\|\|v\|\cos\theta $$
+$$\boxed{ u\cdot v = \|u\|\|v\|\cos\theta }$$
 
 So:
 
@@ -1630,7 +1630,7 @@ $$Ax$$
 
 The answer is:
 
-$$\color{brown}  Ax = \begin{bmatrix} 12\\ 23 \end{bmatrix} $$
+$$\boxed{ Ax = \begin{bmatrix} 12\\ 23 \end{bmatrix} }$$
 
 There are two equally valid ways to understand what happened.
 
@@ -1676,7 +1676,7 @@ $$A = \begin{bmatrix} r_1\\ r_2\\ \vdots\\ r_m \end{bmatrix}$$
 
 we can think of:
 
-$$\color{brown}  Ax = \begin{bmatrix} r_1\cdot x\\ r_2\cdot x\\ \vdots\\ r_m\cdot x \end{bmatrix} $$
+$$\boxed{ Ax = \begin{bmatrix} r_1\cdot x\\ r_2\cdot x\\ \vdots\\ r_m\cdot x \end{bmatrix} }$$
 
 ---
 
@@ -1718,7 +1718,7 @@ $$= \begin{bmatrix} 10\\ 15 \end{bmatrix} + \begin{bmatrix} 2\\ 8 \end{bmatrix}$
 
 so:
 
-$$\color{brown}  Ax = \begin{bmatrix} 12\\ 23 \end{bmatrix} $$
+$$\boxed{ Ax = \begin{bmatrix} 12\\ 23 \end{bmatrix} }$$
 
 So the column view says:
 
@@ -1726,7 +1726,7 @@ So the column view says:
 
 In general:
 
-$$\color{brown}  Ax = x_1c_1+x_2c_2+\cdots+x_nc_n $$
+$$\boxed{ Ax = x_1c_1+x_2c_2+\cdots+x_nc_n }$$
 
 ---
 
@@ -1769,7 +1769,7 @@ The **column view** is often more intuitive:
 
 > **What coefficients $x_1,x_2,\ldots,x_n$ combine the columns of $A$ to construct $b$?**
 
-$$\color{brown}  x_1c_1+x_2c_2+\cdots+x_nc_n = b $$
+$$\boxed{ x_1c_1+x_2c_2+\cdots+x_nc_n = b }$$
 
 ### Important caveat
 
@@ -1799,7 +1799,7 @@ Every entry of $C$ is obtained by taking:
 
 So:
 
-$$\color{brown}  C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) $$
+$$\boxed{ C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) }$$
 
 If $A$ is $m\times n$ and $B$ is $n\times p$, then:
 
@@ -1807,7 +1807,7 @@ $$AB$$
 
 has dimensions:
 
-$$\color{brown}  m\times p $$
+$$\boxed{ m\times p }$$
 
 because each of the $m$ rows of $A$ is paired with each of the $p$ columns of $B$.
 
@@ -1839,7 +1839,7 @@ $$a^Tb = a_1b_1+a_2b_2+\cdots+a_nb_n$$
 
 Therefore:
 
-$$\color{brown}  a^Tb = a\cdot b $$
+$$\boxed{ a^Tb = a\cdot b }$$
 
 The resulting $1\times1$ object is conventionally treated as a scalar.
 
@@ -1858,15 +1858,15 @@ The resulting $1\times1$ object is conventionally treated as a scalar.
 
 The important connection is:
 
-$$\color{brown}  \text{Matrix-vector multiplication} $$
+$$\boxed{ \text{Matrix-vector multiplication} }$$
 
 can simultaneously be understood as:
 
-$$\color{brown}  \text{DOT PRODUCTS of rows} $$
+$$\boxed{ \text{DOT PRODUCTS of rows} }$$
 
 and:
 
-$$\color{brown}  \text{LINEAR COMBINATION of columns} $$
+$$\boxed{ \text{LINEAR COMBINATION of columns} }$$
 
 ---
 
@@ -1878,11 +1878,11 @@ Ask:
 
 If we are scaling/combining vectors:
 
-$$\color{brown}  \text{Linear combination} \rightarrow \text{VECTOR} $$
+$$\boxed{ \text{Linear combination} \rightarrow \text{VECTOR} }$$
 
 If we are comparing vectors through the dot operation:
 
-$$\color{brown}  \text{Dot product} \rightarrow \text{SCALAR} $$
+$$\boxed{ \text{Dot product} \rightarrow \text{SCALAR} }$$
 
 For:
 
@@ -1904,7 +1904,7 @@ And for general matrix multiplication:
 
 The cleanest physical use of the dot product is **mechanical work**:
 
-$$\color{brown}  W=F\cdot d $$
+$$\boxed{ W=F\cdot d }$$
 
 Only the component of force along the displacement contributes to work.
 
@@ -1955,11 +1955,11 @@ Most of the underlying ideas have already been derived, so only the genuinely us
 
 ## 10.1 Self-Dot Gives Squared Magnitude
 
-$$\color{brown}  v\cdot v = \|v\|^2 $$
+$$\boxed{ v\cdot v = \|v\|^2 }$$
 
 Therefore:
 
-$$\color{brown}  \|v\| = \sqrt{v\cdot v} $$
+$$\boxed{ \|v\| = \sqrt{v\cdot v} }$$
 
 This follows because the angle between a vector and itself is $0^\circ$.
 
@@ -1973,7 +1973,7 @@ $$d=Q-P$$
 
 Then:
 
-$$\color{brown}  \mathrm{distance}(P,Q) = \|d\| = \sqrt{d\cdot d} $$
+$$\boxed{ \mathrm{distance}(P,Q) = \|d\| = \sqrt{d\cdot d} }$$
 
 So dot product participates in distance **through the self-dot of the displacement vector**.
 
@@ -2007,7 +2007,7 @@ $$-1 \le \cos\theta \le 1$$
 
 we have:
 
-$$\color{brown}  |a\cdot b| \le \|a\|\|b\| $$
+$$\boxed{ |a\cdot b| \le \|a\|\|b\| }$$
 
 Equality occurs when the nonzero vectors are parallel or anti-parallel.
 
@@ -2025,7 +2025,7 @@ The formal inequality can be revisited when Cauchy–Schwarz becomes important l
 
 The entire choice can be compressed into one question:
 
-$$\color{brown}  \textbf{Do we want magnitude to matter?} $$
+$$\boxed{ \textbf{Do we want magnitude to matter?} }$$
 
 | If... | Use |
 |---|---|
@@ -2035,11 +2035,11 @@ $$\color{brown}  \textbf{Do we want magnitude to matter?} $$
 
 Remember:
 
-$$\color{brown}  \text{Dot} = \text{magnitude} \times \text{magnitude} \times \text{alignment} $$
+$$\boxed{ \text{Dot} = \text{magnitude} \times \text{magnitude} \times \text{alignment} }$$
 
 while:
 
-$$\color{brown}  \text{Cosine similarity} = \text{alignment} $$
+$$\boxed{ \text{Cosine similarity} = \text{alignment} }$$
 
 Neither is universally better.
 
@@ -2159,7 +2159,7 @@ These are the **smallest durable reload layer**—not a summary of every detail.
 
 ## Card 1 — Vector
 
-$$\color{brown}  \text{Vector} = \text{HOW FAR} + \text{WHICH DIRECTION} $$
+$$\boxed{ \text{Vector} = \text{HOW FAR} + \text{WHICH DIRECTION} }$$
 
 Point = **WHERE**
 
@@ -2169,19 +2169,19 @@ Vector = **DISPLACEMENT**
 
 ## Card 2 — Dot Product
 
-$$\color{brown}  a\cdot b = \|a\|\|b\|\cos\theta $$
+$$\boxed{ a\cdot b = \|a\|\|b\|\cos\theta }$$
 
 > **Dot product = MAGNITUDE × MAGNITUDE × ALIGNMENT**
 
 Output:
 
-$$\color{brown}  \text{SCALAR} $$
+$$\boxed{ \text{SCALAR} }$$
 
 ---
 
 ## Card 3 — Three Views of the Same Dot Product
 
-$$\color{brown}  \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) $$
+$$\boxed{ \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) }$$
 
 > **Components COMPUTE it.**
 
@@ -2193,21 +2193,21 @@ $$\color{brown}  \sum_i a_ib_i = \|a\|\|b\|\cos\theta = \|a\|\mathrm{comp}_a(b) 
 
 ## Card 4 — Component and Projection
 
-$$\color{brown}  \mathrm{comp}_a(b) = \|b\|\cos\theta $$
+$$\boxed{ \mathrm{comp}_a(b) = \|b\|\cos\theta }$$
 
 > **Component = HOW MUCH**
 
-$$\color{brown}  \hat a = \frac{a}{\|a\|} $$
+$$\boxed{ \hat a = \frac{a}{\|a\|} }$$
 
 > **Unit vector = WHICH DIRECTION**
 
-$$\color{brown}  \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a $$
+$$\boxed{ \mathrm{proj}_a(b) = \mathrm{comp}_a(b)\hat a }$$
 
 > **Projection = HOW MUCH × WHICH DIRECTION**
 
 And:
 
-$$\color{brown}  \mathrm{comp}_a(b) \begin{cases} \times\|a\| \rightarrow a\cdot b\\ \times\hat a \rightarrow \mathrm{proj}_a(b) \end{cases} $$
+$$\boxed{ \mathrm{comp}_a(b) \begin{cases} \times\|a\| \rightarrow a\cdot b\\ \times\hat a \rightarrow \mathrm{proj}_a(b) \end{cases} }$$
 
 ---
 
@@ -2219,11 +2219,11 @@ $$b = b_{\parallel}+b_{\perp}$$
 
 Then:
 
-$$\color{brown}  a\cdot b_{\perp} = 0 $$
+$$\boxed{ a\cdot b_{\perp} = 0 }$$
 
 Therefore:
 
-$$\color{brown}  a\cdot b = a\cdot b_{\parallel} $$
+$$\boxed{ a\cdot b = a\cdot b_{\parallel} }$$
 
 > **Only the part along the reference direction contributes.**
 
@@ -2231,13 +2231,13 @@ $$\color{brown}  a\cdot b = a\cdot b_{\parallel} $$
 
 ## Card 6 — Cosine Similarity
 
-$$\color{brown}  \cos\theta = \frac{a\cdot b}{\|a\|\|b\|} $$
+$$\boxed{ \cos\theta = \frac{a\cdot b}{\|a\|\|b\|} }$$
 
 > **Cosine similarity = dot product with magnitude removed.**
 
 And:
 
-$$\color{brown}  \hat a\cdot\hat b = \cos\theta $$
+$$\boxed{ \hat a\cdot\hat b = \cos\theta }$$
 
 Decision trigger:
 
@@ -2269,17 +2269,17 @@ $$Ax=b$$
 
 And in matrix multiplication:
 
-$$\color{brown}  C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) $$
+$$\boxed{ C_{ij} = \mathrm{row}_i(A) \cdot \mathrm{column}_j(B) }$$
 
 ---
 
 ## Card 9 — Self-Dot
 
-$$\color{brown}  v\cdot v = \|v\|^2 $$
+$$\boxed{ v\cdot v = \|v\|^2 }$$
 
 Therefore:
 
-$$\color{brown}  \|v\| = \sqrt{v\cdot v} $$
+$$\boxed{ \|v\| = \sqrt{v\cdot v} }$$
 
 ---
 
@@ -2287,8 +2287,8 @@ $$\color{brown}  \|v\| = \sqrt{v\cdot v} $$
 
 If only **one chain** survives months from now, keep this:
 
-$$\color{brown}  \text{Vector} \rightarrow \text{Magnitude + Direction} \rightarrow \text{Dot = Magnitude-Weighted Alignment} \rightarrow \text{Component = HOW MUCH Along} \rightarrow \text{Projection = HOW MUCH × WHICH DIRECTION} $$
+$$\boxed{ \text{Vector} \rightarrow \text{Magnitude + Direction} \rightarrow \text{Dot = Magnitude-Weighted Alignment} \rightarrow \text{Component = HOW MUCH Along} \rightarrow \text{Projection = HOW MUCH × WHICH DIRECTION} }$$
 
 And for choosing similarity:
 
-$$\color{brown}  \textbf{Magnitude matters? Dot.} \qquad \textbf{Magnitude removed? Cosine.} $$
+$$\boxed{ \textbf{Magnitude matters? Dot.} \qquad \textbf{Magnitude removed? Cosine.} }$$
