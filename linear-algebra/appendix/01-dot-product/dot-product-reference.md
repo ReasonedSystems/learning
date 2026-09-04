@@ -114,7 +114,7 @@ $$v=[v_1,v_2]$$
 
 the magnitude is:
 
-**$$\|v\| = \sqrt{v_1^2+v_2^2}$$**
+$$\color{brown} \|v\| = \sqrt{v_1^2+v_2^2}$$
 
 For:
 
