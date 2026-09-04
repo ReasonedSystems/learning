@@ -545,7 +545,7 @@ Magnitude still matters.
 
 ## 3.3 Scalar-Component View
 
-Go through [Vector Decomposition](#1.6-Vector-Decomposition) if you haven't yet.
+Go through [Vector Decomposition](#16-vector-decomposition) if you haven't yet.
 
 Now choose $a$ as the reference direction.
 
@@ -945,6 +945,8 @@ $$\mathrm{comp}_a(b) = \sqrt{18}$$
 $$\mathrm{proj}_a(b) = [3,3]$$
 
 $$b_{\perp} = [2,-2]$$
+
+<img src="resources/dot-product-example.png" alt="dot-product-example" width="1000">
 
 ### Worked-example mental model
 
